@@ -1,0 +1,1 @@
+stm32f407_bootloader\startup_stm32f407xx.o: startup_stm32f407xx.s

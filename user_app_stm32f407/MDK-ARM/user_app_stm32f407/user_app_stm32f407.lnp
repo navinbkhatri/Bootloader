@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"user_app_stm32f407\startup_stm32f407xx.o"
+"user_app_stm32f407\system_stm32f4xx.o"
+"user_app_stm32f407\main.o"
+"user_app_stm32f407\stm32f4xx_hal_msp.o"
+"user_app_stm32f407\stm32f4xx_it.o"
+"user_app_stm32f407\stm32f4xx_hal_flash_ex.o"
+"user_app_stm32f407\stm32f4xx_hal.o"
+"user_app_stm32f407\stm32f4xx_hal_crc.o"
+"user_app_stm32f407\stm32f4xx_hal_pwr.o"
+"user_app_stm32f407\stm32f4xx_hal_dma.o"
+"user_app_stm32f407\stm32f4xx_hal_pwr_ex.o"
+"user_app_stm32f407\stm32f4xx_hal_dma_ex.o"
+"user_app_stm32f407\stm32f4xx_hal_flash.o"
+"user_app_stm32f407\stm32f4xx_hal_rcc.o"
+"user_app_stm32f407\stm32f4xx_hal_uart.o"
+"user_app_stm32f407\stm32f4xx_hal_rcc_ex.o"
+"user_app_stm32f407\stm32f4xx_hal_flash_ramfunc.o"
+"user_app_stm32f407\stm32f4xx_hal_cortex.o"
+"user_app_stm32f407\stm32f4xx_hal_gpio.o"
+--library_type=microlib --strict --scatter "user_app_stm32f407\user_app_stm32f407.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "user_app_stm32f407.map" -o user_app_stm32f407\user_app_stm32f407.axf
